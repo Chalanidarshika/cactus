@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <link rel="icon" href="image/icon.png" type="image/x-icon">
+        <title>Prickle & Bloom </title>
+        <!--stylesheet-->
+        <link rel="stylesheet" href="payment_COD.css"> 
+    </head>
+    <body>
+        <header>
+        <img class="logo" src="image/prickle_logo.jpeg" alt="logo">
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="cshop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contactus.html">Contact us</a>
+            <button class="btnLogin-popup">Logout</button>
+        </nav>
+        </header>
+        <div class="wrapper">
+            <span class="icon-arrow"><ion-icon name="arrow-back"></ion-icon></span>
+            <div class="form-box paymentCOD">
+                <h2>Cash On Delivery</h2>
+<!--PCOD form-->
+                <form action="payment_COD.php" method="post">
+                    <div class="input-box">
+                        <input type="text" name="fullname" required>
+                        <label for="Full name">Full name</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="address" required>
+                        <label for="Address">Address</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="tel" name="phoneno" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx">
+                        <label for="Phone number">Phone number</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="postcode" required>
+                        <label for="Post code">Post code</label>
+                    </div>
+                    <div class="Total">
+                        <p>Total (LKR): </p>                      
+                        <label id="totalAmountLabel" for="total">0.00</label> <!-- Added id here -->
+                    </div>
+                    
+                   
+                    <button type="submit" class="btn">Submit</button>
+                    </a>
+                </form>
+            </div>
+        </div>
+        <script src="payment.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

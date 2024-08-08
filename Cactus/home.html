@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="image/icon.png" type="image/x-icon">
+    <title>Prickle & Bloom</title>
+    <!--stylesheet-->
+    <link rel="stylesheet" href="home_.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="image/prickle_logo.jpeg" alt="logo">
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="login.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contactus.html">Contact us</a>
+            <button class="btnLogin-popup" onclick="navigateToLoginPage()">Logout</button>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="menu">
+            <div class="title"><b>SHOP</b></div>
+            <div class="icon-cart">
+                <ion-icon name="cart"></ion-icon>
+                <span>0</span>
+            </div>
+        </div>
+        <br><br>
+        <div class="list"></div>
+    </div>
+    <div class="card">
+        <h1>Shopping Cart</h1>
+        <ul class="listCard"></ul>
+        <div class="checkOut">
+            <div class="pay"><button>PAY</button></div>
+            <div class="closeShopping">Close</div>
+        </div>
+        <div>
+            <h3>Total Amount &nbsp; &nbsp;  :  &nbsp; &nbsp; &nbsp;  <span class="total">0.00</span></h3>
+        </div>
+    </div>
+
+    <script src="home.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>

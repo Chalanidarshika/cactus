@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <link rel="icon" href="image/icon.png" type="image/x-icon">
+        <title>Prickle & Bloom </title>
+        <!--stylesheet-->
+        <link rel="stylesheet" href="contactus_.css">
+    </head>
+    <body>
+        <header>
+        <img class="logo" src="image/prickle_logo.jpeg" alt="logo">
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="login.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contactus.html">Contact us</a>
+            <button class="btnLogin-popup">Logout</button>
+        </nav>
+        </header>
+        <div class="wrapper">
+            <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+            <div class="Customerreview">
+                <h2>Customer Reviews</h2>
+<!--Customer review form-->
+                <form action="contactus.php" method="post">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="Email" name="email" required>
+                        <label for="Email">Email</label>
+                    </div>
+                    <textarea placeholder="Type your feedback here.." required name="feedback"></textarea>
+                    <br><br>
+                    <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+                    </form>
+             </div>  
+        </div>
+                    <div class="popup" id="popup">
+                        <img src="image/tick.png" >
+                        <h2>Thank you!</h2>
+                        <p>Your feedback is successfully submitted.Thank you!</p>
+                        <button type="button" onclick="closePopup()">OK</button>
+                    </div>
+  
+        <script>
+            const textarea = document.querySelector("textarea");
+            textarea.addEventListener("keyup",e =>{
+                let scHeight=e.target.scrollHeight;
+                textarea.style.height='${scHeight}px';
+            });
+        </script> 
+<!--Popup message-->       
+<script>
+    let popup = document.getElementById("popup");
+
+    function openPopup(){
+        popup.classList.add(".open-popup");
+    }
+    function closePopup(){
+        popup.classList.remove(".open-popup");
+    }
+</script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>               
+    </body>
+</html>

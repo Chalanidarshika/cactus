@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:"Montserrat" , sans-serif ;
+}
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 100px; 
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+li,a,button{
+    font-family:"Montserrat",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:#edf0f1;
+    text-decoration: none;
+
+}
+.logo{
+    cursor:pointer;
+    position:related;
+    height:auto;
+    left:0px;
+    top:0px;
+    width:150px;
+}
+.navigation a{
+    position:relative;
+    font-size: large;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left:30px;   
+}
+.navigation :hover{
+    color: rgb(58, 175, 97);
+}
+button{
+    padding:9px 25px;
+    background-color: rgb(56, 169, 84);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+button:hover{
+    color: hsl(144, 54%, 15%)
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('image/loginbg.jpg')no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.wrapper{
+    position:relative;
+    width:400px;
+    height:540px;
+    background:rgb(159, 216, 186);
+    border:2px solid rgba(255,255,255,5);
+    border-radius:20px;
+    backdrop-filter: blur(1px);
+    box-shadow:0 0 30px rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.wrapper .form-box{
+    width:100%;
+    padding:40px;
+}
+.wrapper .icon-arrow{
+    position:absolute;
+    top:0;
+    right:0;
+    width:45px;
+    height:45px;
+    background:hsl(144, 54%, 15%) ;
+    font-size: 2em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+.form-box h2{
+    font-size: 2em;
+    color:hsl(144, 54%, 15%);
+    text-align: center;
+}
+.input-box{
+    position:relative;
+    width:100%;
+    height: 50px;
+    border-bottom: 2px solid hsl(144, 54%, 15%);
+    margin:30px 0;
+
+}
+.input-box label{
+    position:absolute;
+    top:50%;
+    left:5px;
+    transform: translateY(-50%);
+    font-size:medium;
+    color: hsl(144, 54%, 15%);
+    font-weight: 500;
+    pointer-events: none;
+    transition:.5s;
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top:-5px;
+}
+.input-box input{
+    width:100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size:1em;
+    color:hsl(144, 54%, 15%);
+   font-weight: 600;
+   padding:0 35px 0 5px;
+}
+.Total{
+    font-size: .9em;
+    color: hsl(144, 54%, 15%);
+    font-weight: 500;
+    margin:-15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    width:100%;
+    height: 45px;
+}
+.Total{
+    padding-left: 40px;
+    padding-top: 20px;
+    margin-bottom: 2px;
+    color:hsl(144, 54%, 15%) ;
+}

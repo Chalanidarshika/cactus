@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:"Montserrat" , sans-serif ;
+}
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 100px; 
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+li,a,button{
+    font-family:"Montserrat",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:#edf0f1;
+    text-decoration: none;
+
+}
+.logo{
+    cursor:pointer;
+    position:related;
+    height:auto;
+    left:0px;
+    top:0px;
+    width:150px;
+}
+.navigation a{
+    position:relative;
+    font-size: large;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left:30px;   
+}
+.navigation :hover{
+    color: rgb(58, 175, 97);
+}
+button{
+    padding:9px 25px;
+    background-color: rgb(56, 169, 84);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+button:hover{
+    color: hsl(144, 54%, 15%)
+}
+body{
+    min-height: 100vh;
+    background: url('image/loginbg.jpg')repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home{
+    padding-top: 110px;
+}
+.home h1{
+    text-align: center;
+}
+.home h1,h2,h3{
+    color: white;
+    padding-bottom: 10px;
+}
+h3:hover{
+    color:rgb(58, 175, 97) ;
+}
+.home h3{
+    text-align: center;
+}
+.home p{
+    color: white;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size:120%;
+    padding-bottom: 10px;
+}
+.home ul{
+    padding-left: 50px;
+    font-size:150%;
+    
+}
+.image{
+   
+   padding:10px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap:20px;
+    width:100%;
+}
+.image img{
+    background-color:rgb(159, 216, 186);
+    padding:10px;
+    border-radius: 20px;
+    width:  250px;
+    height: 250px;
+}
+

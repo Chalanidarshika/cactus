@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <link rel="icon" href="image/icon.png" type="image/x-icon">
+        <title>Prickle & Bloom </title>
+        <!--stylesheet-->
+       <link rel="stylesheet" href="payment.css">
+    </head>
+    <body>
+        <header>
+        <img class="logo" src="image/prickle_logo.jpeg" alt="logo">
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="cshop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contactus.html">Contact us</a>
+            <button class="btnLogin-popup">Login</button>
+        </nav>
+        </header>
+        <div class="wrapper">
+            <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+            <div class="form-box-payment">
+                <h2>Payment</h2><br>
+                <h3>Select your payment method</h3>
+<!--Select payment form-->
+                <form>
+                        <div id="cod">
+                            <div class="box">
+                                <a href ="payment_COD.html" >              
+                                    <img src="image/cod.png" alt="Cash On Delivery">
+                                    <h3>Cash On Delivery</h3>
+                                </a> 
+                            </div> <br><br>
+                        </div>
+                        <div id="bank">
+                            <div class="box">
+                                <a href="paymentBank.html">
+                                    <img src="image/bank.png" alt="Bank Transfer">
+                                    <h3>Bank Transfer</h3>
+                                </a>    
+                            </div> 
+                        </div>                
+                </form>
+            </div>
+        </div>
+        <script src="payment.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>               
+    </body>
+</html>

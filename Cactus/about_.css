@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:"Montserrat" , sans-serif ;
+}
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 100px; 
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+li,a,button{
+    font-family:"Montserrat",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:#edf0f1;
+    text-decoration: none;
+
+}
+.logo{
+    cursor:pointer;
+    position:related;
+    height:auto;
+    left:0px;
+    top:0px;
+    width:150px;
+}
+.navigation a{
+    position:relative;
+    font-size: large;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left:30px;   
+}
+.navigation :hover{
+    color: rgb(58, 175, 97);
+}
+button{
+    padding:9px 25px;
+    background-color: rgb(56, 169, 84);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+button:hover{
+    color: hsl(144, 54%, 15%)
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('image/loginbg.jpg')no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.wrapper{
+    position:relative;
+    width:850px;
+    height:550px;
+    background:rgb(159, 216, 186);
+    border:2px solid rgba(255,255,255,5);
+    border-radius:20px;
+    backdrop-filter: blur(1px);
+    box-shadow:0 0 30px rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 10px;
+}
+.wrapper .form-box{
+    width:100%;
+    padding:40px;
+}
+.wrapper .icon-close{
+    position:absolute;
+    top:0;
+    right:0;
+    width:45px;
+    height:45px;
+    background:hsl(144, 54%, 15%) ;
+    font-size: 2em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+h2{
+    text-align: center;
+    color: hsl(144, 54%, 15%);
+    
+}
+h3{
+    color: hsl(144, 54%, 15%);
+}
+p{
+    color: hsl(144, 54%, 15%);
+    text-align: justify; 
+}
